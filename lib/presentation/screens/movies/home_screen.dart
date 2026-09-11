@@ -58,11 +58,10 @@ class _HomeViewState extends ConsumerState<_HomeView> {
             return Column(
               children: [
                 MoviesSlideshow(movies: slidesShowMovies),
-
                 MovieHorizontalListview(
                   movies: nowPlayingMovies,
-                  title: 'reproducionedo ahora mismo',
-                  subtitle: 'Lunes 20',
+                  title: 'Ahora mismo',
+                  subtitle: 'Lunes',
                   loadNextPage: () => ref
                       .read(nowPlayingMoviesProvider.notifier)
                       .loadNextPage(),
